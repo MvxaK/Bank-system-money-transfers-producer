@@ -1,0 +1,15 @@
+package org.cook.bank_system_producer;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
+
+@SpringBootApplication
+@EnableScheduling
+public class BankSystemProducerApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(BankSystemProducerApplication.class, args);
+    }
+
+}
