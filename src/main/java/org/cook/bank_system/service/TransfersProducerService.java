@@ -1,8 +1,8 @@
-package org.cook.bank_system_producer.service;
+package org.cook.bank_system.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.cook.bank_system_producer.model.TransactionEvent;
+import org.cook.bank_system.model.TransactionEvent;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 

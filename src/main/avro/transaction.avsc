@@ -1,0 +1,31 @@
+{
+  "namespace": "org.cook.bank_system.model",
+  "type": "record",
+  "name": "TransactionEvent",
+  "fields": [
+    {
+      "name": "transactionId",
+      "type": "long"
+    },
+    {
+      "name": "fromAccountId",
+      "type": "long"
+    },
+    {
+      "name": "toAccountId",
+      "type": "long"
+    },
+    {
+      "name": "amount",
+      "type": "double"
+    },
+    {
+      "name": "currency",
+      "type": "string"
+    },
+    {
+      "name": "timestamp",
+      "type": "long"
+    }
+  ]
+}

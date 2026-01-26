@@ -1,4 +1,4 @@
-package org.cook.bank_system_producer.config;
+package org.cook.bank_system.config;
 
 public abstract class JacksonIgnoreAvroMixIn{
 

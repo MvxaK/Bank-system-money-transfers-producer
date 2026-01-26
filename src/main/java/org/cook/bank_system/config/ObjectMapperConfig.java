@@ -1,20 +1,22 @@
-package org.cook.bank_system_producer.config;
+package org.cook.bank_system.config;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 
 @Configuration
 public class ObjectMapperConfig {
 
     @Bean
-    public ObjectMapper objectMapper(){
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        mapper.addMixIn(org.apache.avro.specific.SpecificRecord.class, JacksonIgnoreAvroMixIn.class);
-
-        return mapper;
+    public ObjectMapper objectMapper(Jackson2ObjectMapperBuilder builder) {
+        return builder
+                .featuresToDisable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS)
+                .featuresToDisable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES)
+                .mixIn(org.apache.avro.specific.SpecificRecord.class, JacksonIgnoreAvroMixIn.class)
+                .build();
     }
 
 }

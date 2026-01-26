@@ -1,4 +1,4 @@
-package org.cook.bank_system.controller;
+package org.cook.bank_system.controller.apiController;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

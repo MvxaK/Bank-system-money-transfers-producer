@@ -10,6 +10,18 @@
             <column name="balance" valueNumeric="100000"/>
             <column name="version" valueNumeric="0"/>
         </insert>
+
+        <insert tableName="accounts">
+            <column name="owner_name" value="Evgeniy Chebatkov"/>
+            <column name="balance" valueNumeric="200000"/>
+            <column name="version" valueNumeric="0"/>
+        </insert>
+
+        <insert tableName="accounts">
+            <column name="owner_name" value="Maksim Shabanov"/>
+            <column name="balance" valueNumeric="300000"/>
+            <column name="version" valueNumeric="0"/>
+        </insert>
     </changeSet>
 
 </databaseChangeLog>

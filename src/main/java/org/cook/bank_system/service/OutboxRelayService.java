@@ -1,13 +1,11 @@
-package org.cook.bank_system_producer.service;
+package org.cook.bank_system.service;
 
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.cook.bank_system_producer.entity.OutboxEventEntity;
-import org.cook.bank_system_producer.model.TransactionEvent;
-import org.cook.bank_system_producer.repository.OutboxRepository;
-import org.springframework.context.annotation.Bean;
+import org.cook.bank_system.entity.OutboxEventEntity;
+import org.cook.bank_system.model.TransactionEvent;
+import org.cook.bank_system.repository.OutboxRepository;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 

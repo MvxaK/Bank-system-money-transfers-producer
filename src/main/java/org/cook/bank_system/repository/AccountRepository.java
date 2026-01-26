@@ -1,6 +1,6 @@
-package org.cook.bank_system_producer.repository;
+package org.cook.bank_system.repository;
 
-import org.cook.bank_system_producer.entity.AccountEntity;
+import org.cook.bank_system.entity.AccountEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package org.cook.bank_system_producer;
+package org.cook.bank_system;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

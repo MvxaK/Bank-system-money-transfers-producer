@@ -1,14 +1,14 @@
-package org.cook.bank_system_producer.service;
+package org.cook.bank_system.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
-import org.cook.bank_system_producer.entity.AccountEntity;
-import org.cook.bank_system_producer.entity.OutboxEventEntity;
-import org.cook.bank_system_producer.model.TransactionEvent;
-import org.cook.bank_system_producer.repository.AccountRepository;
-import org.cook.bank_system_producer.repository.OutboxRepository;
+import org.cook.bank_system.entity.AccountEntity;
+import org.cook.bank_system.entity.OutboxEventEntity;
+import org.cook.bank_system.model.TransactionEvent;
+import org.cook.bank_system.repository.AccountRepository;
+import org.cook.bank_system.repository.OutboxRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

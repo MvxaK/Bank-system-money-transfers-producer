@@ -1,4 +1,4 @@
-package org.cook.bank_system_producer.entity;
+package org.cook.bank_system.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

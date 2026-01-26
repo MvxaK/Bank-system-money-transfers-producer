@@ -4,7 +4,7 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                    https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 
-    <changeSet id="0" author="admin">
+    <include file="tables/23-01-2026-15-37-00-create-accounts-and-outbox_events-tables.xml" relativeToChangelogFile="true"/>
+    <include file="data/23-01-2026-15-38-00-initial-accounts-and-outbox_events-data.xml" relativeToChangelogFile="true" />
 
-    </changeSet>
 </databaseChangeLog>

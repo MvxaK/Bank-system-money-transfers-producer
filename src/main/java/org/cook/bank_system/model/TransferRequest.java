@@ -1,4 +1,4 @@
-package org.cook.bank_system_producer.model;
+package org.cook.bank_system.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
